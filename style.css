@@ -1,0 +1,218 @@
+*{
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+   
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    background-color: black;
+    color: #e7e7e7;
+    min-height: 100vh;
+    line-height: 1.5;
+
+}
+
+/* DRADIENT AND LAYER BLUR EFFECT */
+.image-gradient{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.layer-bluar{
+    height: 0;
+    width: 30rem;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    box-shadow: 0 0 700px 15px wheat;
+    rotate: -30deg;
+    z-index: -1;
+}
+
+/*CONTAINER */
+
+.container{
+    width: 100%;
+    margin: 500 auto;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+ /* HEADER */
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+     z-index: 900;
+ }
+ header h1{
+              margin: 0;
+              font-size:3rem ;
+              font-weight: 300;
+ }
+
+ nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+   
+ }
+
+ nav a{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    color:inherit ;
+ }
+ nav a;  .a:hover{
+    color: #a7a7a7;
+ }
+
+ .btn-signing{
+    background-color: #a7a7a7;
+    color: black;
+    padding: 0.8rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    cursor:pointer
+ }
+ .btn-signing{
+    background-color: wheat;
+ }
+
+ /* Main CONTENT */
+
+ main{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    min-height: calc(80vh - 6rem);
+ }
+
+ .content{
+    max-width: 40rem;
+    margin-left: 10%;
+    z-index: 9999;
+    
+ }
+
+ .tag-box {
+  display: inline-flex;
+  align-items: left;
+  padding: 12px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #a855f7, #9333ea, #6b21a8, #9333ea, #a855f7);
+  background-size: 300% 100%;
+  animation: glow-border 5s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  
+}
+
+.tag:hover {
+  color: #a855f7;
+  
+}
+
+@keyframes glow-border {
+  0% {
+    background-position: 0% 50%;
+    
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.btn-get-started{
+    text-decoration: none;
+    border: 1p solid #2a2a2a;
+    padding: 20rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: background-color 0.2s ease;
+    display: inline-flex;
+  align-items: left;
+  padding: 12px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #a855f7, #9333ea, #6b21a8, #9333ea, #a855f7);
+  background-size: 300% 100%;
+  animation: glow-border 5s linear infinite;
+  margin-bottom: 1rem;
+  color: #e7e7e7;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+tn-get-started:hover{
+    background-color: #1a1a1a;
+}
+
+.btn-signing-main{
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
+    padding: 0.6rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: background-color 0.2s ease;
+    display: inline-flex;
+  align-items: left;
+  padding: 12px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #a855f7, #9333ea, #6b21a8, #97909d, #a855f7);
+  background-size: 300% 100%;
+  animation: glow-border 5s linear infinite;
+  margin-bottom: 1rem;
+  color: #e7e7e7;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-signing-main{
+    background-color: white;
+}
+
+body{
+  background-image: url(N.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 2px;
+  background-image: url(Ai.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  animation: glow-border 5s linear infinite;
+  margin-bottom: 1rem;
+  color: #e7e7e7;
+
+}
